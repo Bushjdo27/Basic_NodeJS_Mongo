@@ -12,6 +12,7 @@ MongoClient.connect("mongodb://localhost:27017/TodoApp", (err, client) => {
         console.log("\n")
         console.log('------ Andrew Solution : ');
         console.log(JSON.stringify(docs, undefined, 2));
+        console.log(docs)
     }, (err) => {
         console.log("Unable to fetch todos ", err)
     });
@@ -20,6 +21,7 @@ MongoClient.connect("mongodb://localhost:27017/TodoApp", (err, client) => {
         console.log("\n")
         console.log('----- Adam Solution : ');
         console.log(JSON.stringify(docs, undefined, 2))
+        console.log(docs)
         client.close();
     }, (err) => {
         console.log("Unable to fetch todos ", err)
